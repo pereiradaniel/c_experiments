@@ -1,16 +1,5 @@
-//==============================================
-// Name:           Daniele Paolo Grech Pereira
-// Student Number: 037747078
-// Email:          dppereira@myseneca.ca
-// Section:        NZB
-// Workshop:       2 (in-lab)
-//==============================================
-
 #define _CRT_SECURE_NO_WARNINGS
-
-// Start your code below:
 #include <stdio.h>
-#include <math.h>
 int main(void)
 {
     // Declare variables
