@@ -44,10 +44,20 @@ int main (void) {
 	printf("\npsgrTime %d", psgrTime);
 
 	// Calculate wind time:
-	// switch (windDir):
-	//	case windDir == dirTravel:
-	//	
-	//	break; 	
+	if (windDir == "N" || windDir == "n") {
+		bearing = 0;
+	} else
+	if (windDir == "S" || windDir == "s") {
+		bearing = 3200;
+	} else
+	if (windDir == "E" || windDir == "e") {
+		bearing = 1600;
+	} else
+	if (windDir == "W" || windDir == "w") {
+		bearing == 4800;
+	}
+
+		
 
 	return 0;
 }
