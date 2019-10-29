@@ -45,13 +45,13 @@ int main (void) {
 
 	// Calculate wind time:
 	if (windIs == 'A' || windIs == 'a') {
-		windTime = baseTime * 0.2;
+		windTime = baseTime * (0.2 * (float)windForce);
 	} else
 	if (windIs == 'W' || windIs == 'w') {
-		windTime = baseTime * 0.3;
+		windTime = baseTime * (0.3 * (float)windForce);
 	} else
 	if (windIs == 'P' || windIs == 'p') {
-		windTime = baseTime * 0.05;
+		windTime = baseTime * (0.05 * (float)windForce);
 	}
 	printf("\nwindIs %c", windIs);
 	printf("\nWind time %.2lf", windTime);
