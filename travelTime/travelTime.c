@@ -1,7 +1,4 @@
 #include <stdio.h>
-#define AWIND 0.2
-#define WWIND 0.3
-#define PWIND 0.05
 
 int main (void) {
 
@@ -10,10 +7,10 @@ int main (void) {
 		// Calculated vars:
 		psgrTime, againstWind;
 
-	float	baseTime, unitsTravel;
+	float	baseTime, unitsTravel, windTime, totalTime;
 	
 	char	// Input vars:
-		dirTravel, windDir;
+		dirTravel, windDir, windIs;
 	
 	// Get info from user:
 	printf("\nKMs to travel:  ");
@@ -28,6 +25,9 @@ int main (void) {
 	printf("\nWind direction:  ");
 	scanf("%c", &windDir);
 	windDir = getchar();
+	printf("Wind is (a)gainst, (w)ith, or (p)erpendicular:  ");
+	scanf("%c", &windIs);
+	windIs = getchar();
 
 	printf("\n\nOutputs:\nkmTravel %d\ndirTravel %c\nnumPgrs %d\nwindForce %d\nwindDir %c ", kmTravel, dirTravel, numPgrs, windForce, windDir);
 
@@ -44,6 +44,7 @@ int main (void) {
 	printf("\npsgrTime %d", psgrTime);
 
 	// Calculate wind time:
+<<<<<<< HEAD
 	if (windDir == "N" || windDir == "n") {
 		bearing = 0;
 	} else
@@ -58,6 +59,23 @@ int main (void) {
 	}
 
 		
+=======
+	if (windIs == 'A' || windIs == 'a') {
+		windTime = baseTime * (0.2 * (float)windForce);
+	} else
+	if (windIs == 'W' || windIs == 'w') {
+		windTime = baseTime * (0.3 * (float)windForce);
+	} else
+	if (windIs == 'P' || windIs == 'p') {
+		windTime = baseTime * (0.05 * (float)windForce);
+	}
+	printf("\nwindIs %c", windIs);
+	printf("\nWind time %.2lf", windTime);
+
+	// Calculate total time:
+	totalTime = baseTime + psgrTime + windTime;
+	printf("\nTotal time:  %.2lf", totalTime);
+>>>>>>> travelTime
 
 	return 0;
 }
