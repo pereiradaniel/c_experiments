@@ -44,22 +44,6 @@ int main (void) {
 	printf("\npsgrTime %d", psgrTime);
 
 	// Calculate wind time:
-<<<<<<< HEAD
-	if (windDir == "N" || windDir == "n") {
-		bearing = 0;
-	} else
-	if (windDir == "S" || windDir == "s") {
-		bearing = 3200;
-	} else
-	if (windDir == "E" || windDir == "e") {
-		bearing = 1600;
-	} else
-	if (windDir == "W" || windDir == "w") {
-		bearing == 4800;
-	}
-
-		
-=======
 	if (windIs == 'A' || windIs == 'a') {
 		windTime = baseTime * (0.2 * (float)windForce);
 	} else
@@ -75,7 +59,6 @@ int main (void) {
 	// Calculate total time:
 	totalTime = baseTime + psgrTime + windTime;
 	printf("\nTotal time:  %.2lf", totalTime);
->>>>>>> travelTime
 
 	return 0;
 }
