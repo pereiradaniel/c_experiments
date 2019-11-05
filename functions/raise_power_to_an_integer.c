@@ -21,6 +21,8 @@ int main(void)
 	int base, exp, answer;
 
 	printf("Enter base : ");
+	scanf("%d", &base);
+	printf("Enter exponent : ");
 	scanf("%d", &exp);
 
 	answer = power(base, exp);
