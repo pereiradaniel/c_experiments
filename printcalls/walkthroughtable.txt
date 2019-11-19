@@ -1,0 +1,18 @@
+			main									printInfo
+line		arr1	arr2	numOfPF		line		numbers		info 		count	i 		y
+14			...
+15					...
+16							0
+18							1
+										5			...			...			1		0		3
+										6									1		0		3
+										8									1		0		3
+										9									2		0		3
+										6									2		1		2
+										8									2		1		2
+										9									3		2		2
+										6									3		2		1
+										8									3		2		1
+										9									4		3		1
+
+*not correct*
