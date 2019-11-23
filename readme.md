@@ -3,7 +3,7 @@
 
 ## IPC 144 C Programming notes
 
-A repository of C language programming experiments.
+> A repository of C language programming experiments.
 
 
 ---
