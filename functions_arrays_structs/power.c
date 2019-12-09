@@ -1,10 +1,10 @@
-#include <stdio.h>
+#include <stdio.h>  // <> indicates header is located in systems directory.
+#include "power.h"  // Holds function prototypes.
 
-#include "power.h"
-
+// Main Program
 int main(void)
 {
-      int base, exp, answer;
+      int base, exp, answer;  // Local scope vars.
 
       printf("Enter base : ");
       scanf("%d", &base);
@@ -17,9 +17,10 @@ int main(void)
       return 0;
 }
 
-int power(int base, int exponent)
+// Functions
+int power(int base, int exponent)  // Function scope vars.
 { 
-      int result, i;
+      int result, i;  // Local scope vars.
 
       result = 1;
       for (i = 0; i < exponent; i++)
