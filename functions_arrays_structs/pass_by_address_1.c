@@ -10,8 +10,8 @@ struct Student
       float grade[4];
 };
 
-void set(struct Student* st);
-void display(const struct Student* st);
+void set(struct Student* st);  // Pointer
+void display(const struct Student* st);  // Pointer & const
 
 int main(void)
 {
@@ -31,7 +31,7 @@ void set(struct Student* st)
 void display(const struct Student* st)
 {
       int i;
-      printf("Grades for %d\n", (*st).no); 
+      printf("Grades for %d\n", (*st).no);  // Dereferenced with parentheses because . binds tighter then dereferencing operator *
       for (i = 0; i < (*st).no_grades_filled; i++) 
               printf("%.1f\n", (*st).grade[i]); 
 }

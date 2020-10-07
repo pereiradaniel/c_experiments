@@ -1,3 +1,6 @@
+// Pass by Address 3
+// arrow_notation.c
+
 #include <stdio.h>
 
 struct Student
@@ -28,7 +31,7 @@ void set(struct Student* st)
 void display(const struct Student* st)
 {
       int i;
-      printf("Grades for %d\n", st->no); 
+      printf("Grades for %d\n", st->no);  // Arrow notation used insterad of parentheses 
       for (i = 0; i < st->no_grades_filled; i++) 
               printf("%.1f\n", st->grade[i]); 
 }
